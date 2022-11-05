@@ -1,7 +1,7 @@
-import java.io.*;
+
 import java.util.*;
 
-public class Main {
+public class Solution {
     public static int maxStore(int []arr,int n){
          int [] lmax=new int [n];
         lmax[0]=arr[0];
@@ -34,13 +34,14 @@ public class Main {
           return ans;
     }
 
+
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-         Scanner sc= new Scanner(System.in);
-        int n=sc.nextInt();
+         var scd= new Scanner(System.in);
+        int n=scd.nextInt();
         int arr[]=new int[n];
         for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
+            arr[i]=scd.nextInt();
             
         }
         System.out.println(maxStore(arr,n));
